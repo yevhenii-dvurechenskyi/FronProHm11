@@ -50,7 +50,7 @@ const itSchool = {
         }
         else{
             this.availableCourses.push(courseName);
-            this.dispatch("GROUP_ADD",courseName);
+            this.dispatch("COURSE_ADD",courseName);
         }
     },
     removeCourse(courseName){
@@ -58,7 +58,7 @@ const itSchool = {
             let arr1 = [];
             arr1 = this.availableCourses.filter(item => item !== courseName);
             this.availableCourses = arr1;
-            this.dispatch("GROUP_REMOVE",courseName);
+            this.dispatch("COURSE_REMOVE",courseName);
         }
         else{
             console.log(`Course ${courseName} does not exist!`);
