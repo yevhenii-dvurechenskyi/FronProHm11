@@ -93,12 +93,12 @@ itSchool.on(
 );
 
 itSchool.on(
-    "GROUP_ADD",
+    "COURSE_ADD",
     (courseName) => console.log(`Congratulations, you have successfully added a course ${courseName}.`),
 );
 
 itSchool.on(
-    "GROUP_REMOVE",
+    "COURSE_REMOVE",
     (courseName) => console.log(`Congratulations, you have successfully removed a course ${courseName}.`),
 );
 ;
